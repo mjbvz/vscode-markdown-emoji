@@ -70,7 +70,7 @@ To support new markdown syntax, first add a `plugins` entry in the `markdown.pre
 }
 ```
 
-This tell's VSCode that your extension will provide *markdown-it* plugins and that the extension should be activated before the preview is shown. 
+This tell's VSCode that your extension provides *markdown-it* plugins and that it should be activated before the markdown preview is shown. 
 
 To register the plugins themselves, in your extension's `activate` function, just return an object with an `extendMarkdownPreview` method. This method takes a *markdown-it* instance and must return a modified version of that instance.
 
