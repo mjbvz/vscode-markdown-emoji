@@ -42,13 +42,13 @@ Extensions can enhance VSCode's markdown preview by:
 * Providing [markdown-it plugins](https://github.com/markdown-it/markdown-it#syntax-extensions) that add support for new markdown syntax
 
 ## Changing the Styling of the Markdown Preview
-The change the styling of the markdown preview, just add a `markdown.preview` entry to the `contributes` section of your extension's package json:
+To change the styling of markdown preview page, just add a `markdown.preview` entry to the `contributes` section of your extension's `package.json`, like so:
 
 ```json
 {
     "contributes": {
         "markdown.preview": {
-            "styles": ["./custom_style.css"]
+            "styles": ["./my_custom_style.css"]
         }
     }
 }
@@ -58,7 +58,7 @@ The change the styling of the markdown preview, just add a `markdown.preview` en
 
 
 ## Using Markdown-It Plugins to Support New Markdown Syntax
-Markdown-it plugins can add support for new markdown syntax. To contribute one of these, first add a `plugins` entry in the `markdown.preview` section of `contributes` in the extension's `package.json`
+To support new markdown syntax, first add a `plugins` entry in the `markdown.preview` section of `contributes` in the extension's `package.json`
 
 ```json
 {
@@ -70,7 +70,9 @@ Markdown-it plugins can add support for new markdown syntax. To contribute one o
 }
 ```
 
-This tell's VSCode that your extension should be activated before the markdown preview is shown. Then, in your extension's `activate` function, add return an object with an `extendMarkdownPreview` method defined on it. This method takes a *markdown-it* instance and must return a modified version of that instance.
+This tell's VSCode that your extension will provide *markdown-it* plugins and that the extension should be activated before the preview is shown. 
+
+To register the plugins themselves, in your extension's `activate` function, just return an object with an `extendMarkdownPreview` method. This method takes a *markdown-it* instance and must return a modified version of that instance.
 
 
 ```ts
@@ -83,4 +85,4 @@ export function activate(context: vscode.ExtensionContext) {
 }
 ```
 
-> 🎵 **Note**: Your extension can still use other activation points that are triggered before a markdown preview is ever shown. The `plugins` entry only means that your extension will be activated before the preview is shown if it has not already been activated previously.
+> 🎵 **Note**: Your extension can still use other activation points that are triggered before a markdown preview is ever shown. The `plugins` entry only means that your extension will be activated when the preview is first shown if it has not already been activated previously.
