@@ -54,37 +54,35 @@ To change the styling of markdown preview page, just add a `markdown.preview` en
 }
 ```
 
-`styles` should be an array of extension relative paths to CSS files. These stylesheets will be included on the markdown preview page.
+`styles` should be an array of extension relative paths to CSS files. These stylesheets will be included on the markdown preview page, and will be included after the default markdown preview stylings but before the user's custom stylesheets.
 
 
 ## Using Markdown-It Plugins to Support New Markdown Syntax
-To support new markdown syntax, first add a `plugins` entry in the `markdown.preview` section of `contributes` in the extension's `package.json`
+To support new markdown syntax, first add `markdown-it.plugins` entry in the extension's `package.json`
 
 ```json
 {
     "contributes": {
-        "markdown.preview": {
-            "plugins": true
-        }
+        "markdown-it.plugins": true
     }
 }
 ```
 
 This tells VSCode that your extension provides *markdown-it* plugins and that it should be activated before the markdown preview is shown. 
 
-To register the plugins themselves, in your extension's `activate` function, just return an object with an `extendMarkdownPreview` method. This method takes a *markdown-it* instance and must return a modified version of that instance.
+To register the plugins themselves, in your extension's `activate` function, just return an object with an `extendMarkdownIt` method. This method takes a *markdown-it* instance and must return a modified version of that instance.
 
 
 ```ts
 export function activate(context: vscode.ExtensionContext) {
     return {
-        extendMarkdownPreview(md: any): any {
+        extendMarkdownIt(md: any): any {
             return md.use(require('markdown-it-emoji'))
         }
     }
 }
 ```
 
-VSCode's markdown extension will invoke `extendMarkdownPreview` when the markdown preview is shown for the first time.
+VSCode's markdown extension will invoke `extendMarkdownIt` when the markdown preview is shown for the first time.
 
 > 🎵 **Note**: Your extension can still use other activation points that are triggered before a markdown preview is ever shown. The `plugins` entry only means that your extension will be activated when the preview is first shown if it has not already been activated previously.
