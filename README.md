@@ -34,14 +34,14 @@ function plugin(md: any): any {
 
 ----
 
-# API Proposal, Take Two
+# API Proposal, Take Two (not yet implemented)
 
 Extensions can enhance VSCode's markdown preview by:
 
 * Providing stylesheets for the preview page
 * Providing [markdown-it plugins](https://github.com/markdown-it/markdown-it#syntax-extensions) that add support for new markdown syntax
 
-## Changing Preview CSS
+## Changing the Styling of the Markdown Preview
 The change the styling of the markdown preview, just add a `markdown.preview` entry to the `contributes` section of your extension's package json:
 
 ```json
@@ -57,7 +57,7 @@ The change the styling of the markdown preview, just add a `markdown.preview` en
 `styles` should be an array of extension relative paths to CSS files. These stylesheets will be included on the markdown preview page.
 
 
-## Using Markdown-It Plugins
+## Using Markdown-It Plugins to Support New Markdown Syntax
 Markdown-it plugins can add support for new markdown syntax. To contribute one of these, first add a `plugins` entry in the `markdown.preview` section of `contributes` in the extension's `package.json`
 
 ```json
