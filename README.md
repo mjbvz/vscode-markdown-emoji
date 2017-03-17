@@ -85,4 +85,6 @@ export function activate(context: vscode.ExtensionContext) {
 }
 ```
 
+VSCode's markdown extension will invoke `extendMarkdownPreview` when the markdown preview is shown for the first time.
+
 > 🎵 **Note**: Your extension can still use other activation points that are triggered before a markdown preview is ever shown. The `plugins` entry only means that your extension will be activated when the preview is first shown if it has not already been activated previously.
