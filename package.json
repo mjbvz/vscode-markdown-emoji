@@ -4,6 +4,7 @@
   "description": "Adds emoji support to VSCode's built-in markdown preview",
   "version": "0.0.1",
   "publisher": "bierner",
+  "license": "MIT",
   "engines": {
     "vscode": "^1.8.0"
   },
