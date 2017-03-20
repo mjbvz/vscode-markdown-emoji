@@ -11,9 +11,10 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [
-    "onCommand:_markdown.onActivateExtensions"
-  ],
+  "activationEvents": [],
+  "contributes": {
+    "markdownit.plugins": true
+  },
   "main": "./out/src/extension",
   "scripts": {
     "vscode:prepublish": "tsc -p ./",
@@ -25,7 +26,6 @@
     "vscode": "^1.0.0"
   },
   "dependencies": {
-    "markdown-it-emoji": "^1.3.0",
-    "markdown-it-katex": "^2.0.3"
+    "markdown-it-emoji": "^1.3.0"
   }
 }
