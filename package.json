@@ -13,7 +13,7 @@
   ],
   "activationEvents": [],
   "contributes": {
-    "markdownit.plugins": true
+    "markdown.markdownItPlugins": true
   },
   "main": "./out/src/extension",
   "scripts": {
