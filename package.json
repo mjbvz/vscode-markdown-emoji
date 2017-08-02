@@ -23,7 +23,8 @@
   },
   "devDependencies": {
     "typescript": "^2.2.1",
-    "vscode": "^1.0.0"
+    "vscode": "^1.0.0",
+    "@types/node": "^6.0.40"
   },
   "dependencies": {
     "markdown-it-emoji": "^1.3.0"
