@@ -1,11 +1,9 @@
-# VSCode Markdown Emoji
+[![](https://vsmarketplacebadge.apphb.com/version/bierner.markdown-emoji.svg)](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-emoji)
 
-> **⚠️Warning⚠️** This extension depends on a new vscode API that is only present in VSCode 1.15 insiders
+Adds [:emoji:](https://www.webpagefx.com/tools/emoji-cheat-sheet/) syntax support to VS Code's built-in Markdown preview
 
-Demonstrates how VSCode's builtin Markdown preview can be extended by other extensions. This extension adds emoji support to the preview.
 
-## Enabling
+![](https://github.com/mjbvz/vscode-markdown-emoji/raw/master/docs/example.png)
 
-1. Using a VSCode 1.15 insiders from July 16th+
-1. Install the VSIX for this extension
-
+# Features 
+- Adds support for [:emoji:](https://www.webpagefx.com/tools/emoji-cheat-sheet/) syntax to VS Code's built-in markdown preview

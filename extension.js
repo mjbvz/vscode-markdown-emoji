@@ -1,9 +1,9 @@
 'use strict'
 import * as vscode from 'vscode'
 
-export function activate(context: vscode.ExtensionContext) {
+export function activate(context) {
     return {
-        extendMarkdownIt(md: any) {
+        extendMarkdownIt(md) {
             return md.use(require('markdown-it-emoji'));
         }
     }

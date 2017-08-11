@@ -1,12 +1,12 @@
 {
   "name": "markdown-emoji",
   "displayName": "markdown-emoji",
-  "description": "Adds emoji support to VSCode's built-in markdown preview",
-  "version": "0.0.1",
+  "description": "Adds emoji syntax support to VS Code's built-in markdown preview",
+  "version": "0.0.2",
   "publisher": "bierner",
   "license": "MIT",
   "engines": {
-    "vscode": "^1.8.0"
+    "vscode": "^1.15.0"
   },
   "categories": [
     "Other"
@@ -15,10 +15,9 @@
   "contributes": {
     "markdown.markdownItPlugins": true
   },
-  "main": "./out/src/extension",
+  "main": "./extension",
   "scripts": {
-    "vscode:prepublish": "tsc -p ./",
-    "compile": "tsc -watch -p ./",
+
     "postinstall": "node ./node_modules/vscode/bin/install"
   },
   "devDependencies": {
