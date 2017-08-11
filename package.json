@@ -2,10 +2,16 @@
   "name": "markdown-emoji",
   "displayName": "markdown-emoji",
   "description": "Adds emoji syntax support to VS Code's built-in markdown preview",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "icon": "logo/logox128.png",
   "publisher": "bierner",
   "license": "MIT",
+  "repository": {
+    "url": "https://github.com/mjbvz/vscode-markdown-emoji.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mjbvz/vscode-markdown-emoji/issues"
+  },
   "engines": {
     "vscode": "^1.15.0"
   },
