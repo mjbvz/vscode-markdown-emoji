@@ -2,7 +2,7 @@
   "name": "markdown-emoji",
   "displayName": "markdown-emoji",
   "description": "Adds emoji syntax support to VS Code's built-in markdown preview",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "bierner",
   "license": "MIT",
   "engines": {
@@ -15,9 +15,8 @@
   "contributes": {
     "markdown.markdownItPlugins": true
   },
-  "main": "./extension",
+  "main": "./extension.js",
   "scripts": {
-
     "postinstall": "node ./node_modules/vscode/bin/install"
   },
   "devDependencies": {
