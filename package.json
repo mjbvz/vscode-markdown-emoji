@@ -1,6 +1,6 @@
 {
   "name": "markdown-emoji",
-  "displayName": "markdown-emoji",
+  "displayName": "Markdown Emoji",
   "description": "Adds emoji syntax support to VS Code's built-in markdown preview",
   "version": "0.0.5",
   "icon": "logo/logox128.png",
