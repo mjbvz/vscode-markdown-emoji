@@ -32,6 +32,6 @@
     "@types/node": "^6.0.40"
   },
   "dependencies": {
-    "markdown-it-emoji": "^1.3.0"
+    "markdown-it-emoji": "^1.4.0"
   }
 }
