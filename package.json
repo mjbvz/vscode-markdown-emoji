@@ -31,11 +31,8 @@
     "markdown.markdownItPlugins": true
   },
   "main": "./extension.js",
-  "scripts": {
-    "postinstall": "node ./node_modules/vscode/bin/install"
-  },
   "devDependencies": {
-    "vscode": "^1.0.0"
+    "@types/vscode": "^1.33.0"
   },
   "dependencies": {
     "markdown-it-emoji": "^1.4.0"
