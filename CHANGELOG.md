@@ -1,5 +1,8 @@
 # Change Log
 
+## 0.1.5 - April 18, 2019
+- Set explicit `extensionKind` for VS Code compatability.
+
 ## 0.0.7 - November 3, 2017
 - Multiroot ready
 
