@@ -20,7 +20,7 @@
     "url": "https://github.com/mjbvz/vscode-markdown-emoji/issues"
   },
   "engines": {
-    "vscode": "^1.15.0"
+    "vscode": "^1.33.0"
   },
   "categories": [
     "Other"
