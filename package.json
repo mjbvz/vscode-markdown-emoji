@@ -34,6 +34,6 @@
     "@types/vscode": "^1.33.0"
   },
   "dependencies": {
-    "markdown-it-emoji": "^1.4.0"
+    "markdown-it-emoji": "^2.0.0"
   }
 }
