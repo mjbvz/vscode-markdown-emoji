@@ -1,6 +1,7 @@
+//@ts-check
 'use strict'
 
-function activate(context) {
+function activate() {
     return {
         extendMarkdownIt(md) {
             return md.use(require('markdown-it-emoji'));
