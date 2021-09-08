@@ -1,5 +1,8 @@
 # Change Log
 
+## 0.2.0 - September 8, 2021
+- Add support for running in browsers. 
+
 ## 0.1.0 - Feb 22, 2021
 - Update to markdown-it-emoji 2.0.0
 
