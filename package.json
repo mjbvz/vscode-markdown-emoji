@@ -29,6 +29,7 @@
     "markdown.markdownItPlugins": true
   },
   "main": "./extension.js",
+  "browser": "./extension.js",
   "devDependencies": {
     "@types/vscode": "^1.33.0"
   },
