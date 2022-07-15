@@ -1,5 +1,8 @@
 # Change Log
 
+## 0.3.0 - July 15, 2022
+- Add notebook support.
+
 ## 0.2.1 - September 8, 2021
 - Webpack extension.
 
