@@ -1,5 +1,8 @@
 # Change Log
 
+## 0.3.1 - December 17, 2024
+- Small readme fix.
+
 ## 0.3.0 - July 15, 2022
 - Add notebook support.
 

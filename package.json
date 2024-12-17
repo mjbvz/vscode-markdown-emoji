@@ -1,6 +1,6 @@
 {
   "name": "markdown-emoji",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "displayName": "Markdown Emoji",
   "description": "Adds emoji syntax support to VS Code's built-in markdown preview and markdown cells in notebook",
   "keywords": [
